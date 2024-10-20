@@ -19,19 +19,19 @@
         .image-container {
             background-color: black; /* Color de fondo negro */
             width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
-            height: 60%; /* Asegura que el contenedor tenga la misma altura que el header */
+            height: 70%; /* Altura reducida */
             position: relative; /* Posición relativa para que el contenido se ajuste */
             overflow: hidden; /* Oculta cualquier contenido que se salga */
         }
         header img {
             width: 100%;
-            height: 100%;
-            object-fit: contain; /* Cambiado a 'contain' */
+            height: auto; /* Cambiado a auto para mantener la relación de aspecto */
+            object-fit: cover; /* Cambiado a 'cover' para mantener el tamaño */
             object-position: center; /* Centra la imagen */
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%) scale(0.6); /* Escala la imagen */
+            transform: translate(-50%, -50%); /* Eliminar la escala para mantener el tamaño */
         }
         @media screen and (max-width: 768px) {
             header {
