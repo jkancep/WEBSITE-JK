@@ -12,12 +12,13 @@
         }
         header {
             text-align: center;
-            height: 240px; /* Ajuste directo de altura */
-            overflow: hidden; /* Oculta cualquier contenido que se desborde */
+            height: 240px; /* Altura fija para el header */
+            overflow: hidden; /* Oculta cualquier contenido desbordado */
         }
         header img {
-            width: 100%; /* Imagen ocupa el 100% del ancho */
-            height: auto; /* Mantiene la relación de aspecto */
+            width: 100%; /* La imagen ocupa el 100% del ancho */
+            height: 100%; /* La imagen ocupará toda la altura del header */
+            object-fit: cover; /* Cubre el área sin deformar */
         }
         .bio {
             padding: 20px;
