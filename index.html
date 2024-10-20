@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julián Kancepolski</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+        }
+        img {
+            width: 100%; /* Responsiva */
+            max-width: 1920px; /* Ancho máximo */
+            height: auto; /* Mantiene la relación de aspecto */
+        }
+        .bio {
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .albums {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px; /* Espaciado entre botones */
+            margin: 20px 0;
+        }
+        .album-button {
+            padding: 10px 20px;
+            background-color: #007bff; /* Color de fondo */
+            color: white; /* Color del texto */
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s; /* Transición de color */
+        }
+        .album-button:hover {
+            background-color: #0056b3; /* Color al pasar el mouse */
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Espaciado entre iconos */
+            margin: 20px 0;
+        }
+        .social-icon {
+            width: 40px; /* Tamaño del icono */
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="ruta_de_tu_imagen.jpg" alt="Imagen de Julián Kancepolski">
+    </header>
+    
+    <div class="bio">
+        <p><strong>Bio</strong><br>
+        Julián Kancepolski es un compositor nacido en Buenos Aires, en 2001 se radicó en España. Ha editado tres discos: Portbou (2007), Amateur (2019) y Solarium (2020). Además compone e interpreta música para cine, televisión, danza, teatro y medios digitales, entre las que destacan:</p>
+        <p>Julián Kancepolski si a composer born Buenos Aires, in 2001 he settled down in Spain. He published three albums: Portbou (2007), Amateur (2019) and Solarium (2020). He also composes, arranges and performs music for film, tv, theatre, dance and other media.</p>
+    </div>
+
+    <h2>Albums</h2>
+    <div class="albums">
+        <a class="album-button" href="link_a_spotify_album1" target="_blank">El retorn de les Lluernes (2022)</a>
+        <a class="album-button" href="link_a_spotify_album2" target="_blank">Solarium (2020)</a>
+        <a class="album-button" href="link_a_spotify_album3" target="_blank">Amateur (2019)</a>
+        <a class="album-button" href="link_a_spotify_album4" target="_blank">Portbou (2007)</a>
+    </div>
+
+    <div class="social-icons">
+        <a href="link_a_tu_perfil_youtube" target="_blank">
+            <img class="social-icon" src="ruta_icono_youtube.png" alt="YouTube">
+        </a>
+        <a href="link_a_tu_perfil_spotify" target="_blank">
+            <img class="social-icon" src="ruta_icono_spotify.png" alt="Spotify">
+        </a>
+        <a href="link_a_tu_perfil_apple" target="_blank">
+            <img class="social-icon" src="ruta_icono_apple.png" alt="Apple Music">
+        </a>
+    </div>
+</body>
+</html>
