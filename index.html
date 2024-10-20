@@ -12,14 +12,30 @@
         }
         header {
             text-align: center;
-            max-height: 50vh; /* 50% de la altura de la ventana */
-            overflow: hidden; /* Oculta cualquier parte sobrante de la imagen */
+            max-height: 25vh; /* Reducido al 50% del tamaño original */
+            overflow: hidden;
         }
         header img {
             width: 100%;
             height: auto;
-            max-height: 50vh; /* Asegura que la imagen no sea más alta que el 50% */
-            object-fit: cover; /* Mantiene la proporción y ajusta el contenido */
+            max-height: 25vh; /* Reducido al 50% del tamaño original */
+            object-fit: cover;
+        }
+        @media screen and (max-width: 768px) {
+            header {
+                max-height: 20vh; /* Ajuste para tablets */
+            }
+            header img {
+                max-height: 20vh;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            header {
+                max-height: 15vh; /* Ajuste para móviles */
+            }
+            header img {
+                max-height: 15vh;
+            }
         }
         .bio {
             padding: 20px;
