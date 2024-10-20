@@ -12,25 +12,24 @@
         }
         header {
             text-align: center;
-            height: auto;
-            max-height: 50vh;
+            height: auto; /* Cambiado a auto para ajustarse al contenido */
+            max-height: 50vh; /* Altura máxima del 50% de la ventana */
             overflow: hidden;
             position: relative;
-            background-color: white; /* Cambiado a blanco */
         }
         header img {
             width: 100%;
             height: auto;
-            display: block;
+            display: block; /* Asegura que no haya espacio extra debajo de la imagen */
         }
         @media screen and (max-width: 768px) {
             header {
-                max-height: 40vh;
+                max-height: 40vh; /* Ajuste para tablets */
             }
         }
         @media screen and (max-width: 480px) {
             header {
-                max-height: 30vh;
+                max-height: 30vh; /* Ajuste para móviles */
             }
         }
         /* El resto de los estilos se mantienen igual */
