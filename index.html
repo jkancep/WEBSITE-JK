@@ -12,14 +12,13 @@
         }
         header {
             text-align: center;
-            max-height: 50vh; /* 50% de la altura de la ventana */
-            overflow: hidden; /* Oculta cualquier parte sobrante de la imagen */
+            height: 50vh; /* 50% de la altura de la ventana */
+            overflow: hidden; /* Oculta el exceso de la imagen */
         }
         header img {
             width: 100%;
-            height: auto;
-            max-height: 50vh; /* Asegura que la imagen no sea más alta que el 50% */
-            object-fit: cover; /* Mantiene la proporción y ajusta el contenido */
+            height: 100%;
+            object-fit: cover; /* Mantiene las proporciones y ajusta el contenido para rellenar el header */
         }
         .bio {
             padding: 20px;
@@ -93,5 +92,6 @@
             <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/apple%20icon.jpg" alt="Apple Music">
         </a>
     </div>
+
 </body>
 </html>
