@@ -9,84 +9,80 @@
     <style>
         body {
             margin: 0;
-            font-family: 'Open Sans', sans-serif; /* Cambiar a Open Sans */
+            font-family: 'Open Sans', sans-serif;
             line-height: 1.6;
         }
         header {
             text-align: center;
-            height: 25vh; /* Altura fija del header */
+            height: 25vh; 
             overflow: hidden;
             position: relative;
-            margin-bottom: 28px; /* Ajusta este valor según el espacio deseado */
+            margin-bottom: 28px;
         }
         .image-container {
-            background-color: black; /* Color de fondo negro */
-            width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
-            height: 100%; /* Cambiado a 70% para ajustar la altura */
-            position: relative; /* Posición relativa para que el contenido se ajuste */
-            overflow: hidden; /* Oculta cualquier contenido que se salga */
+            background-color: black; 
+            width: 100%; 
+            height: 100%; 
+            position: relative; 
+            overflow: hidden;
         }
         header img {
             width: 100%;
             height: 100%;
-            object-fit: contain; /* Cambiado a 'contain' */
-            object-position: center; /* Centra la imagen */
+            object-fit: contain;
+            object-position: center;
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%) scale(0.6); /* Escala la imagen */
+            transform: translate(-50%, -50%) scale(0.6); 
         }
         @media screen and (max-width: 768px) {
             header {
-                height: 20vh; /* Ajuste para tablets */
+                height: 20vh;
             }
         }
         @media screen and (max-width: 480px) {
             header {
-                height: 15vh; /* Ajuste para móviles */
+                height: 25vh; /* Aumentar la altura en móvil */
+            }
+            header img {
+                transform: translate(-50%, -50%) scale(0.9); /* Aumentar el tamaño de la imagen en móvil */
             }
         }
         .bio {
             padding: 20px;
             text-align: center;
-            margin: 0 30%; /* Márgenes del 30% a los lados */
-            border: 0px solid #ccc; /* Borde del box */
-            border-radius: 0px; /* Esquinas redondeadas */
-            box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1); /* Sombra suave */
-            background-color: #ffffff; /* Color de fondo del box */
+            margin: 0 30%;
+            background-color: #ffffff;
         }
-
-        /* Media queries para ajustar márgenes en pantallas pequeñas */
         @media screen and (max-width: 768px) {
             .bio {
-                margin: 0 10%; /* Márgenes más pequeños en tablets */
+                margin: 0 10%; 
             }
         }
-
         @media screen and (max-width: 480px) {
             .bio {
-                margin: 0 5%; /* Márgenes más pequeños en móviles */
+                margin: 0 5%; 
             }
         }
-
         h2 {
             text-align: center;
             margin-top: 20px;
-            font-family: 'Open Sans', sans-serif; /* Cambiar a Open Sans */
-            font-weight: 600; /* Negrita */
-            color: black; /* Color negro */
-            font-size: 20px; /* Ajustar tamaño del texto */
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            color: black;
+            font-size: 20px;
         }
         .bio p:first-of-type {
-            color: #333; /* Gris oscuro */
-            margin: 0; /* Sin margen superior o inferior */
-            font-size: 10px; /* Tamaño del texto de la biografía igual al de Albums */
+            color: #333;
+            margin: 0;
+            font-size: 10px;
         }
         .bio p:last-of-type {
-            color: #777; /* Gris claro */
-            font-style: italic; /* Itálica */
-            margin: 10px 0 0; /* Margen superior de 10px */
-            font-size: 14px; /* Tamaño del texto en itálica */
+            color: #777;
+            font-style: italic;
+            margin: 10px 0 0;
+            font-size: 14px;
         }
         .albums {
             display: flex;
@@ -97,14 +93,14 @@
         }
         .album-button {
             padding: 5px 10px;
-            font-size: 14px; /* Tamaño del texto más pequeño */
+            font-size: 14px;
             background-color: #5c5c5c;
             color: white;
             border: none;
             border-radius: 5px;
             text-decoration: none;
             transition: background-color 0.3s;
-            font-family: 'Open Sans', sans-serif; /* Cambiar a Open Sans */
+            font-family: 'Open Sans', sans-serif;
         }
         .album-button:hover {
             background-color: #5c5c5c;
@@ -129,8 +125,7 @@
     </header>
 
     <div class="bio">
-       
-        Julián Kancepolski es un compositor nacido en Buenos Aires, en 2001 se radicó en España. Ha editado tres discos: Portbou (2007), Amateur (2019) y Solarium (2020). Además compone e interpreta música para cine, televisión, danza, teatro y medios digitales.</p>
+        Julián Kancepolski es un compositor nacido en Buenos Aires, en 2001 se radicó en España. Ha editado tres discos: Portbou (2007), Amateur (2019) y Solarium (2020). Además compone e interpreta música para cine, televisión, danza, teatro y medios digitales.
         <p>Julián Kancepolski is a composer born in Buenos Aires, in 2001 he settled down in Spain. He published three albums: Portbou (2007), Amateur (2019) and Solarium (2020). He also composes, arranges and performs music for film, tv, theatre, dance and other media.</p>
     </div>
 
@@ -144,16 +139,4 @@
 
     <div class="social-icons">
         <a href="https://www.youtube.com/channel/UC4Jm2tz8OS-VslZFx5St8fQ" target="_blank">
-            <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/youtube%20icon.jpg" alt="YouTube">
-        </a>
-        
-        <a href="https://open.spotify.com/artist/6DDqxjhbPR5KUwZ6TomVYE?si=NwiFrD1OR5-GaSDHGYeCVw" target="_blank">
-            <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/spotify%20icon.jpg" alt="Spotify">
-        </a>
-        
-        <a href="https://music.apple.com/us/artist/julian-kancepolski/1016764437" target="_blank">
-            <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/apple%20icon.jpg" alt="Apple Music">
-        </a>
-    </div>
-</body>
-</html>
+            <img class="social-icon" src
