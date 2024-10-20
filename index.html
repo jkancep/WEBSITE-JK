@@ -12,31 +12,31 @@
         }
         header {
             text-align: center;
-            max-height: 25vh; /* Reducido al 50% del tamaño original */
+            height: 25vh; /* Altura fija del header */
             overflow: hidden;
+            position: relative;
         }
         header img {
             width: 100%;
-            height: auto;
-            max-height: 25vh; /* Reducido al 50% del tamaño original */
+            height: 100%;
             object-fit: cover;
+            object-position: center; /* Centra la imagen verticalmente */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.5); /* Reduce la imagen al 50% y la centra */
         }
         @media screen and (max-width: 768px) {
             header {
-                max-height: 20vh; /* Ajuste para tablets */
-            }
-            header img {
-                max-height: 20vh;
+                height: 20vh; /* Ajuste para tablets */
             }
         }
         @media screen and (max-width: 480px) {
             header {
-                max-height: 15vh; /* Ajuste para móviles */
-            }
-            header img {
-                max-height: 15vh;
+                height: 15vh; /* Ajuste para móviles */
             }
         }
+        /* El resto de los estilos se mantienen igual */
         .bio {
             padding: 20px;
             text-align: center;
@@ -82,6 +82,7 @@
         <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/profile%20header%20cello%20nueva%20nueva.jpg" alt="Imagen de Julián Kancepolski">
     </header>
 
+    <!-- El resto del contenido se mantiene igual -->
     <div class="bio">
         <p><strong>Bio</strong><br>
         Julián Kancepolski es un compositor nacido en Buenos Aires, en 2001 se radicó en España. Ha editado tres discos: Portbou (2007), Amateur (2019) y Solarium (2020). Además compone e interpreta música para cine, televisión, danza, teatro y medios digitales, entre las que destacan:</p>
