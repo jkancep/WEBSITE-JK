@@ -12,13 +12,13 @@
         }
         header {
             text-align: center;
-            height: 50vh; /* Altura del header en relación a la altura de la ventana */
-            overflow: hidden; /* Oculta cualquier contenido que se desborde */
+            height: 50vh; /* 50% de la altura de la ventana */
+            overflow: hidden; /* Oculta el exceso de la imagen */
         }
         header img {
-            width: 100%; /* Imagen ocupa el 100% del ancho */
-            height: 100%; /* Imagen ocupa el 100% de la altura */
-            object-fit: cover; /* Mantiene la proporción de la imagen y corta el exceso */
+            width: 100%;
+            max-height: 240px; /* Altura máxima */
+            object-fit: cover; /* Mantiene la proporción y ajusta el contenido */
         }
         .bio {
             padding: 20px;
@@ -62,7 +62,10 @@
         /* Media Queries para Responsividad */
         @media (max-width: 768px) {
             header {
-                height: 40vh; /* Ajusta la altura para tabletas y móviles */
+                height: 40vh; /* Menor altura en dispositivos móviles */
+            }
+            header img {
+                max-height: 180px; /* Menor altura máxima en dispositivos móviles */
             }
             .bio {
                 font-size: 16px; /* Texto más pequeño en móviles */
@@ -77,8 +80,8 @@
         }
 
         @media (max-width: 480px) {
-            header {
-                height: 30vh; /* Ajuste adicional en móviles muy pequeños */
+            header img {
+                max-height: 150px; /* Ajuste adicional en móviles muy pequeños */
             }
             .bio {
                 font-size: 14px; /* Texto más pequeño en dispositivos pequeños */
