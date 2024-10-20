@@ -18,7 +18,6 @@
             overflow: hidden;
             position: relative;
             margin-bottom: 28px; /* Ajusta este valor según el espacio deseado */
-
         }
         .image-container {
             background-color: black; /* Color de fondo negro */
@@ -56,6 +55,20 @@
             box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1); /* Sombra suave */
             background-color: #ffffff; /* Color de fondo del box */
         }
+
+        /* Media queries para ajustar márgenes en pantallas pequeñas */
+        @media screen and (max-width: 768px) {
+            .bio {
+                margin: 0 10%; /* Márgenes más pequeños en tablets */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .bio {
+                margin: 0 5%; /* Márgenes más pequeños en móviles */
+            }
+        }
+
         h2 {
             text-align: center;
             margin-top: 20px;
