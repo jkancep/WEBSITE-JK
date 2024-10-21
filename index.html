@@ -1,119 +1,171 @@
-<style>
-    body {
-        margin: 0;
-        font-family: 'Cairo', sans-serif;
-        line-height: 1.6;
-    }
-    header {
-        text-align: center;
-        height: 25vh; 
-        overflow: hidden;
-        position: relative;
-        margin-bottom: 42px;
-    }
-    .image-container {
-        background-color: black; 
-        width: 100%; 
-        height: 100%; 
-        position: relative; 
-        overflow: hidden;
-    }
-    header img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        object-position: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0.6); 
-    }
-    @media screen and (max-width: 768px) {
-        header {
-            height: 20vh;
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julián Kancepolski</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Cairo', sans-serif; /* Cambiado a cairo */
+            line-height: 1.6;
         }
-    }
-    @media screen and (max-width: 480px) {
         header {
-            height: 25vh;
+            text-align: center;
+            height: 25vh; 
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 42px; /* Duplicado margen inferior */
+        }
+        .image-container {
+            background-color: black; 
+            width: 100%; 
+            height: 100%; 
+            position: relative; 
+            overflow: hidden;
         }
         header img {
-            transform: translate(-50%, -50%) scale(0.9);
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.6); 
         }
-    }
-    .bio {
-        padding: 20px;
-        text-align: center;
-        margin: 0 30%;
-        margin-top: 40px;
-        background-color: #ffffff;
-    }
-    @media screen and (max-width: 768px) {
+        @media screen and (max-width: 768px) {
+            header {
+                height: 20vh;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            header {
+                height: 25vh; /* Aumentar la altura en móvil */
+            }
+            header img {
+                transform: translate(-50%, -50%) scale(0.9); /* Aumentar el tamaño de la imagen en móvil */
+            }
+        }
         .bio {
-            margin: 0 10%; 
+            padding: 20px;
+            text-align: center;
+            margin: 0 30%;
+            margin-top: 40px; /* Aumentado para separar de header */
+            background-color: #ffffff;
         }
-    }
-    @media screen and (max-width: 480px) {
-        .bio {
-            margin: 0 5%; 
+        @media screen and (max-width: 768px) {
+            .bio {
+                margin: 0 10%; 
+            }
         }
-    }
-    h2 {
-        text-align: center;
-        margin-top: 20px;
-        font-family: 'Cairo', sans-serif;
-        font-weight: 600;
-        color: black;
-        font-size: 20px;
-    }
-    h3 {
-        font-size: 14px; 
-        color: #333; /* Cambiado a negro/gris oscuro */
-        font-family: 'Cairo', sans-serif; /* Fuente Cairo */
-        font-weight: normal; /* Cambiado de 600 a normal */
-        margin-top: 20px; /* Aumentar el margen superior */
-        margin-bottom: 20px; /* Aumentar el margen inferior */
-    }
-    .bio p:first-of-type {
-        color: #333;
-        margin: 0;
-        font-size: 9px;
-    }
-    .bio p:last-of-type {
-        color: #777;
-        font-style: italic;
-        margin: 13px 0 0;
-        font-size: 14px;
-    }
-    .albums {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin: 20px 0; 
-    }
-    .album-button {
-        padding: 5px 10px;
-        font-size: 14px;
-        background-color: #ababab;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        text-decoration: none;
-        transition: background-color 0.3s;
-        font-family: 'Cairo', sans-serif; 
-    }
-    .album-button:hover {
-        background-color: #5c5c5c;
-    }
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        margin-top: 30px; 
-    }
-    .social-icon {
-        width: 30px;
-        height: 30px;
-    }
-</style>
+        @media screen and (max-width: 480px) {
+            .bio {
+                margin: 0 5%; 
+            }
+        }
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            font-family: 'Cairo', sans-serif; /* Cambiado a cairo */
+            font-weight: 600;
+            color: black;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 14px; 
+            color: #333; /* Cambiado a negro/gris oscuro */
+            font-family: 'Cairo', sans-serif; /* Fuente Cairo */
+            font-weight: normal; /* Cambiado de 600 a normal */
+            margin-top: 20px; /* Aumentar el margen superior */
+            margin-bottom: 20px; /* Aumentar el margen inferior */
+        }
+        .bio p:first-of-type {
+            color: #333;
+            margin: 0;
+            font-size: 9px;
+        }
+        .bio p:last-of-type {
+            color: #777;
+            font-style: italic;
+            margin: 13px 0 0;
+            font-size: 14px;
+        }
+        .albums {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0; /* Duplicado margen superior e inferior */
+        }
+        .album {
+            text-align: center; /* Para centrar el texto debajo de cada imagen */
+        }
+        .album img {
+            width: 1025px; /* Tamaño original */
+            height: 1025px; /* Tamaño original */
+            max-width: 100%; /* Responsivo */
+            height: auto; /* Mantiene la proporción */
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px; /* Duplicado margen superior */
+        }
+        .social-icon {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="image-container">
+            <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/profile%20header%20cello%20web%202023.jpg" alt="Imagen de Julián Kancepolski">
+        </div>
+    </header>
+
+    <div class="bio">
+        Julián Kancepolski es un compositor nacido en Buenos Aires, en 2001 se radicó en España. Ha editado tres discos: Portbou (2007), Amateur (2019) y Solarium (2020). Además compone e interpreta música para cine, televisión, danza, teatro y medios digitales.
+        <p>Julián Kancepolski is a composer born in Buenos Aires, in 2001 he settled down in Spain. He published three albums: Portbou (2007), Amateur (2019) and Solarium (2020). He also composes, arranges and performs music for film, tv, theatre, dance and other media.</p>
+    </div>
+
+    <h2>Albums</h2>
+    <div class="albums">
+        <div class="album">
+            <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Tapa%20Lluernes%201024.jpg" alt="El Retorn de les Lluernes (2022)">
+            <h3>El Retorn de les Lluernes (2022)</h3>
+        </div>
+        <div class="album">
+            <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Solarium%20tapa%201024.jpg" alt="Solarium (2020)">
+            <h3>Solarium (2020)</h3>
+        </div>
+        <div class="album">
+            <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Amaterur%201024.jpg" alt="Amateur (2019)">
+            <h3>Amateur (2019)</h3>
+        </div>
+        <div class="album">
+            <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Portbou%201024.jpg" alt="Portbou (2007)">
+            <h3>Portbou (2007)</h3>
+        </div>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://www.youtube.com/channel/UC4Jm2tz8OS-VslZFx5St8fQ" target="_blank">
+            <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/youtube%20iconB.jpg" alt="YouTube">
+        </a>
+        
+        <a href="https://open.spotify.com/artist/6DDqxjhbPR5KUwZ6TomVYE?si=NwiFrD1OR5-GaSDHGYeCVw" target="_blank">
+            <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/spotify%20iconB.jpg" alt="Spotify">
+        </a>
+        
+        <a href="https://music.apple.com/us/artist/julian-kancepolski/1016764437" target="_blank">
+            <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/apple%20iconB.jpg" alt="Apple Music">
+        </a>
+    </div>
+</body>
+</html>
