@@ -10,7 +10,7 @@
     <style>
         body {
             margin: 0;
-            font-family: 'Cairo', sans-serif; /* Cambiado a cairo */
+            font-family: 'Cairo', sans-serif; 
             line-height: 1.6;
         }
         header {
@@ -18,7 +18,7 @@
             height: 25vh; 
             overflow: hidden;
             position: relative;
-            margin-bottom: 42px; /* Duplicado margen inferior */
+            margin-bottom: 42px; 
         }
         .image-container {
             background-color: black; 
@@ -44,17 +44,17 @@
         }
         @media screen and (max-width: 480px) {
             header {
-                height: 25vh; /* Aumentar la altura en móvil */
+                height: 25vh; 
             }
             header img {
-                transform: translate(-50%, -50%) scale(0.9); /* Aumentar el tamaño de la imagen en móvil */
+                transform: translate(-50%, -50%) scale(0.9);
             }
         }
         .bio {
             padding: 20px;
             text-align: center;
             margin: 0 30%;
-            margin-top: 40px; /* Aumentado para separar de header */
+            margin-top: 40px; 
             background-color: #ffffff;
         }
         @media screen and (max-width: 768px) {
@@ -70,18 +70,10 @@
         h2 {
             text-align: center;
             margin-top: 20px;
-            font-family: 'Cairo', sans-serif; /* Cambiado a cairo */
+            font-family: 'Cairo', sans-serif; 
             font-weight: 600;
             color: black;
             font-size: 20px;
-        }
-        h3 {
-            font-size: 14px; 
-            color: #333; /* Cambiado a negro/gris oscuro */
-            font-family: 'Cairo', sans-serif; /* Fuente Cairo */
-            font-weight: normal; /* Cambiado de 600 a normal */
-            margin-top: 20px; /* Aumentar el margen superior */
-            margin-bottom: 20px; /* Aumentar el margen inferior */
         }
         .bio p:first-of-type {
             color: #333;
@@ -99,22 +91,27 @@
             justify-content: center;
             flex-wrap: wrap;
             gap: 10px;
-            margin: 20px 0; /* Duplicado margen superior e inferior */
+            margin: 20px 0; 
         }
         .album {
-            text-align: center; /* Para centrar el texto debajo de cada imagen */
+            text-align: center; 
+            flex: 1 0 200px; 
+            max-width: 150px; 
         }
-        .album img {
-            width: 1025px; /* Tamaño original */
-            height: 1025px; /* Tamaño original */
-            max-width: 100%; /* Responsivo */
-            height: auto; /* Mantiene la proporción */
+        .album-image {
+            width: 100%; 
+            height: auto; 
+        }
+        h3 {
+            font-size: 14px; 
+            color: #333; /* Cambiado a negro/gris oscuro */
+            font-family: 'Cairo', sans-serif; /* Fuente Cairo */
         }
         .social-icons {
             display: flex;
             justify-content: center;
             gap: 30px;
-            margin-top: 30px; /* Duplicado margen superior */
+            margin-top: 30px; 
         }
         .social-icon {
             width: 30px;
@@ -137,20 +134,28 @@
     <h2>Albums</h2>
     <div class="albums">
         <div class="album">
-            <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Tapa%20Lluernes%201024.jpg" alt="El Retorn de les Lluernes (2022)">
-            <h3>El Retorn de les Lluernes (2022)</h3>
+            <a href="https://open.spotify.com/album/2mjB71s63rOtIVQ9IwN5bp?si=fKSDikWHQpyZXTWLOk5w8A" target="_blank">
+                <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Tapa%20Lluernes%201024.jpg" alt="El Retorn de les Lluernes (2022)" class="album-image">
+                <h3>El Retorn de les Lluernes (2022)</h3>
+            </a>
         </div>
         <div class="album">
-            <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Solarium%20tapa%201024.jpg" alt="Solarium (2020)">
-            <h3>Solarium (2020)</h3>
+            <a href="https://open.spotify.com/album/7lXSEb4zyiI2SU87QFG5Qs?si=jMEqc1wAR0SnHv_SEne4CA" target="_blank">
+                <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Solarium%20tapa%201024.jpg" alt="Solarium (2020)" class="album-image">
+                <h3>Solarium (2020)</h3>
+            </a>
         </div>
         <div class="album">
-            <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Amaterur%201024.jpg" alt="Amateur (2019)">
-            <h3>Amateur (2019)</h3>
+            <a href="https://open.spotify.com/album/3b7MIJfswL3egCT5zbjk6W?si=rz-Pcs3MS_Clbcs6lFQd0A" target="_blank">
+                <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Amaterur%201024.jpg" alt="Amateur (2019)" class="album-image">
+                <h3>Amateur (2019)</h3>
+            </a>
         </div>
         <div class="album">
-            <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Portbou%201024.jpg" alt="Portbou (2007)">
-            <h3>Portbou (2007)</h3>
+            <a href="https://open.spotify.com/album/4Q7qD8UZDk9y5LB9tnEJpp?si=a9AHhdAbTX-0QHucDHzjxw" target="_blank">
+                <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Portbou%201024.jpg" alt="Portbou (2007)" class="album-image">
+                <h3>Portbou (2007)</h3>
+            </a>
         </div>
     </div>
 
@@ -169,3 +174,4 @@
     </div>
 </body>
 </html>
+
