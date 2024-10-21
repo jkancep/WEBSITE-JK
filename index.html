@@ -126,7 +126,19 @@
         .social-icon {
             width: 30px;
             height: 30px;
+        }.albums {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px; /* Espacio entre álbumes (ajusta este valor para la versión móvil) */
+        margin: 20px 0; 
+    }
+    
+    @media screen and (min-width: 768px) {
+        .albums {
+            gap: 30px; /* Aumenta el espacio entre álbumes en pantallas más grandes (versión escritorio) */
         }
+    }
     </style>
 </head>
 <body>
