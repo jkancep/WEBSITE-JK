@@ -70,7 +70,7 @@
         h2 {
             text-align: center;
             margin-top: 30px;
-            margin-bottom: 30px; 
+            margin-bottom: 30px; /* Este es el margen inferior que puedes ajustar */
             font-family: 'Cairo', sans-serif; 
             font-weight: 600;
             color: black;
@@ -99,55 +99,51 @@
             text-align: center; 
             flex: 1 0 200px; 
             max-width: 150px; 
-            transition: transform 0.2s; 
+            transition: transform 0.2s; /* Suaviza la animación */
         }
         .album:hover {
-            transform: scale(1.05); 
+            transform: scale(1.05); /* Aumenta el tamaño ligeramente al pasar el ratón */
         }
         .album-image {
             width: 100%; 
             height: auto; 
         }
         .album a {
-            text-decoration: none; 
-            color: inherit; 
+            text-decoration: none; /* Elimina la subrayado de los enlaces */
+            color: inherit; /* Hereda el color del padre para los enlaces */
         }
         h3 {
             font-size: 14px; 
-            color: #333; 
-            font-family: 'Cairo', sans-serif; 
-            font-weight: normal; 
+            color: #333; /* Cambiado a negro/gris oscuro */
+            font-family: 'Cairo', sans-serif; /* Fuente Cairo */
+            font-weight: normal; /* Cambiado de 600 a normal */
         }
-
         .social-icons {
             display: flex;
             justify-content: center;
-            gap: 15px;
-            margin-top: 20px; 
+            gap: 30px;
+            margin-top: 0px; 
         }
-
         .social-icon {
-            width: 40px;
-            height: 40px;
-            object-fit: contain;
+            width: 30px;
+            height: 30px;
         }
-
         .albums {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 10px; 
+            gap: 10px; /* Espacio entre álbumes (ajusta este valor para la versión móvil) */
             margin: 20px 0; 
         }
         
         @media screen and (min-width: 768px) {
             .albums {
-                gap: 30px; 
+                gap: 30px; /* Aumenta el espacio entre álbumes en pantallas más grandes (versión escritorio) */
             }
         }
     </style>
 
-    <!-- Google tag (gtag.js) - Google Analytics -->
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PP8Z36L73M"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -162,12 +158,12 @@
             <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/profile%20header%20cello%20web%202023.jpg" alt="Imagen de Julián Kancepolski">
         </div>
     </header>
- 
+    
     <div class="bio">
         Julián Kancepolski es un compositor nacido en Buenos Aires, en 2001 se radicó en España. Ha editado tres discos: Portbou (2007), Amateur (2019) y Solarium (2020). Además compone e interpreta música para cine, televisión, danza, teatro y medios digitales.
         <p>Julián Kancepolski is a composer born in Buenos Aires, in 2001 he settled down in Spain. He published three albums: Portbou (2007), Amateur (2019) and Solarium (2020). He also composes, arranges and performs music for film, tv, theatre, dance and other media.</p>
     </div>
- 
+    
     <h2>Albums</h2>
     <div class="albums">
         <div class="album">
@@ -195,20 +191,17 @@
             </a>
         </div>
     </div>
- 
+    
     <div class="social-icons">
         <a href="https://www.youtube.com/channel/UC4Jm2tz8OS-VslZFx5St8fQ" target="_blank">
             <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/youtube%20iconB.jpg" alt="YouTube">
         </a>
-        
-        <a href="https://open.spotify.com/artist/6DDqxjhbPR5KUwZ6TomVYE?si=NwiFrD1OR5-GaSDHGYeCVw" target="_blank">
+        <a href="https://open.spotify.com/artist/6DDqxjhbPR5KUwZ6TomVYE?si=NwiFrD1OR5-Gpi6xDpocgg" target="_blank">
             <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/spotify%20iconB.jpg" alt="Spotify">
         </a>
-        
-        <a href="https://soundcloud.com/jkancepolski" target="_blank">
-            <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/soundcloud%20iconB.jpg" alt="SoundCloud">
+        <a href="https://www.instagram.com/juliankancepolski/" target="_blank">
+            <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/instagram%20iconB.jpg" alt="Instagram">
         </a>
     </div>
 </body>
 </html>
-
