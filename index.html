@@ -1,9 +1,7 @@
- 
- 
 <!DOCTYPE html>
 <html lang="es">
 <head><!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PP8Z36L73M"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PP8Z36L73M "></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -14,9 +12,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julián Kancepolski</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com ">
+    <link rel="preconnect" href="https://fonts.gstatic.com " crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap " rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -96,7 +94,7 @@
             margin: 13px 0 0;
             font-size: 14px;
         }
- 
+ 
         .albums {
             display: flex;
             justify-content: center;
@@ -108,24 +106,24 @@
             text-align: center; 
             flex: 1 0 200px; 
             max-width: 150px; 
-            transition: transform 0.2s; /* Suaviza la animación */
+            transition: transform 0.2s;
         }
         .album:hover {
-            transform: scale(1.05); /* Aumenta el tamaño ligeramente al pasar el ratón */
+            transform: scale(1.05);
         }
         .album-image {
             width: 100%; 
             height: auto; 
         }
         .album a {
-            text-decoration: none; /* Elimina la subrayado de los enlaces */
-            color: inherit; /* Hereda el color del padre para los enlaces */
+            text-decoration: none;
+            color: inherit;
         }
         h3 {
             font-size: 14px; 
-            color: #333; /* Cambiado a negro/gris oscuro */
-            font-family: 'Cairo', sans-serif; /* Fuente Cairo */
-            font-weight: normal; /* Cambiado de 600 a normal */
+            color: #333;
+            font-family: 'Cairo', sans-serif;
+            font-weight: normal;
         }
         .social-icons {
             display: flex;
@@ -136,72 +134,73 @@
         .social-icon {
             width: 30px;
             height: 30px;
-        }.albums {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px; /* Espacio entre álbumes (ajusta este valor para la versión móvil) */
-        margin: 20px 0; 
-    }
-    
-    @media screen and (min-width: 768px) {
-        .albums {
-            gap: 30px; /* Aumenta el espacio entre álbumes en pantallas más grandes (versión escritorio) */
         }
-    }
+        /* --- nuevas 6 líneas para la quinta portada --- */
+        @media (max-width: 600px) {
+          .album.new { flex: 0 0 100%; }
+          .album:not(.new) { flex: 0 0 45%; }
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="image-container">
-            <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/profile%20header%20cello%20web%202023.jpg" alt="Imagen de Julián Kancepolski">
+            <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/profile%20header%20cello%20web%202023.jpg " alt="Imagen de Julián Kancepolski">
         </div>
     </header>
- 
+ 
     <div class="bio">
         Julián Kancepolski es un compositor nacido en Buenos Aires, en 2001 se radicó en España. Ha editado tres discos: Portbou (2007), Amateur (2019) y Solarium (2020). Además, crea e interpreta música para cine, televisión, danza, teatro y medios digitales.
         <p>Julián Kancepolski is a composer born in Buenos Aires who settled in Spain in 2001. He has released three albums: Portbou (2007), Amateur (2019), and Solarium (2020). He also creates, arranges, and performs music for film, television, theatre, dance, and other media.</p>
     </div>
- 
+ 
     <h2>Albums</h2>
     <div class="albums">
+        <!-- NUEVO DISCO (quinta portada) -->
+        <div class="album new">
+            <a href="https://open.spotify.com/album/XXXXX" target="_blank">
+                <img src="https://github.com/jkancep/WEBSITE-JK/blob/main/Estantes%20Portada%2017b.jpg" alt="Estantes (2004-2013)" class="album-image">
+                <h3>Estantes (2004-2013)</h3>
+            </a>
+        </div>
+
         <div class="album">
-            <a href="https://open.spotify.com/album/2mjB71s63rOtIVQ9IwN5bp?si=fKSDikWHQpyZXTWLOk5w8A" target="_blank">
-                <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Tapa%20Lluernes%201024.jpg" alt="El Retorn de les Lluernes (2022)" class="album-image">
+            <a href="https://open.spotify.com/album/2mjB71s63rOtIVQ9IwN5bp?si=fKSDikWHQpyZXTWLOk5w8A " target="_blank">
+                <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Tapa%20Lluernes%201024.jpg " alt="El Retorn de les Lluernes (2022)" class="album-image">
                 <h3>El Retorn de les Lluernes - OST (2022)</h3>
             </a>
         </div>
         <div class="album">
-            <a href="https://open.spotify.com/album/7lXSEb4zyiI2SU87QFG5Qs?si=jMEqc1wAR0SnHv_SEne4CA" target="_blank">
-                <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Solarium%20tapa%201024.jpg" alt="Solarium (2020)" class="album-image">
+            <a href="https://open.spotify.com/album/7lXSEb4zyiI2SU87QFG5Qs?si=jMEqc1wAR0SnHv_SEne4CA " target="_blank">
+                <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Solarium%20tapa%201024.jpg " alt="Solarium (2020)" class="album-image">
                 <h3>Solarium (2020)</h3>
             </a>
         </div>
         <div class="album">
-            <a href="https://open.spotify.com/album/3b7MIJfswL3egCT5zbjk6W?si=rz-Pcs3MS_Clbcs6lFQd0A" target="_blank">
-                <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Amaterur%201024.jpg" alt="Amateur (2019)" class="album-image">
+            <a href="https://open.spotify.com/album/3b7MIJfswL3egCT5zbjk6W?si=rz-Pcs3MS_Clbcs6lFQd0A " target="_blank">
+                <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Amaterur%201024.jpg " alt="Amateur (2019)" class="album-image">
                 <h3>Amateur (2019)</h3>
             </a>
         </div>
         <div class="album">
-            <a href="https://open.spotify.com/album/4Q7qD8UZDk9y5LB9tnEJpp?si=a9AHhdAbTX-0QHucDHzjxw" target="_blank">
-                <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Portbou%201024.jpg" alt="Portbou (2007)" class="album-image">
+            <a href="https://open.spotify.com/album/4Q7qD8UZDk9y5LB9tnEJpp?si=a9AHhdAbTX-0QHucDHzjxw " target="_blank">
+                <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Portbou%201024.jpg " alt="Portbou (2007)" class="album-image">
                 <h3>Portbou (2007)</h3>
             </a>
         </div>
     </div>
- 
+ 
     <div class="social-icons">
-        <a href="https://www.youtube.com/channel/UC4Jm2tz8OS-VslZFx5St8fQ" target="_blank">
-            <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/youtube%20iconB.jpg" alt="YouTube">
+        <a href="https://www.youtube.com/channel/UC4Jm2tz8OS-VslZFx5St8fQ " target="_blank">
+            <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/youtube%20iconB.jpg " alt="YouTube">
         </a>
         
-        <a href="https://open.spotify.com/artist/6DDqxjhbPR5KUwZ6TomVYE?si=NwiFrD1OR5-GaSDHGYeCVw" target="_blank">
-            <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/spotify%20iconB.jpg" alt="Spotify">
+        <a href="https://open.spotify.com/artist/6DDqxjhbPR5KUwZ6TomVYE?si=NwiFrD1OR5-GaSDHGYeCVw " target="_blank">
+            <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/spotify%20iconB.jpg " alt="Spotify">
         </a>
         
-        <a href="https://music.apple.com/us/artist/julian-kancepolski/1016764437" target="_blank">
-            <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/apple%20iconB.jpg" alt="Apple Music">
+        <a href="https://music.apple.com/us/artist/julian-kancepolski/1016764437 " target="_blank">
+            <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/apple%20iconB.jpg " alt="Apple Music">
         </a>
     </div>
 </body>
