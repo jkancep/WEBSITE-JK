@@ -48,17 +48,11 @@ header img {
     transform: translate(-50%, -50%) scale(0.6); 
 }
 @media screen and (max-width: 768px) {
-    header {
-        height: 20vh;
-    }
+    header { height: 20vh; }
 }
 @media screen and (max-width: 480px) {
-    header {
-        height: 25vh; 
-    }
-    header img {
-        transform: translate(-50%, -50%) scale(0.9);
-    }
+    header { height: 25vh; }
+    header img { transform: translate(-50%, -50%) scale(0.9); }
 }
 .bio {
     padding: 20px;
@@ -68,14 +62,10 @@ header img {
     background-color: #ffffff;
 }
 @media screen and (max-width: 768px) {
-    .bio {
-        margin: 0 10%; 
-    }
+    .bio { margin: 0 10%; }
 }
 @media screen and (max-width: 480px) {
-    .bio {
-        margin: 0 5%; 
-    }
+    .bio { margin: 0 5%; }
 }
 h2 {
     text-align: center;
@@ -110,22 +100,15 @@ h2 {
     max-width: 150px; 
     transition: transform 0.2s;
 }
-.album:hover {
-    transform: scale(1.05);
-}
-.album-image {
-    width: 100%; 
-    height: auto; 
-}
-.album a {
-    text-decoration: none;
-    color: inherit;
-}
-h3 {
-    font-size: 14px; 
-    color: #333;
-    font-family: 'Cairo', sans-serif;
-    font-weight: normal;
+.album:hover { transform: scale(1.05); }
+.album-image { width: 100%; height: auto; }
+.album a { text-decoration: none; color: inherit; }
+
+/* Texto gris debajo de las portadas */
+.album-subtitle {
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 8px;
 }
 
 /* ICONOS SOCIALES (debajo de álbumes) */
@@ -133,7 +116,7 @@ h3 {
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-top: 40px; /* espacio respecto a los álbumes */
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 .social-icon {
@@ -141,11 +124,8 @@ h3 {
     height: 30px;
     transition: transform 0.2s;
 }
-.social-icon:hover {
-    transform: scale(1.1);
-}
+.social-icon:hover { transform: scale(1.1); }
 
-/* Adaptación móvil */
 @media (max-width: 600px) {
   .album.new      { flex: 0 0 100%; }
   .album:not(.new) { flex: 0 0 45%; }
@@ -178,40 +158,39 @@ h3 {
   <div class="album">
     <a href="https://open.spotify.com/album/7lXSEb4zyiI2SU87QFG5Qs?si=jMEqc1wAR0SnHv_SEne4CA" target="_blank">
       <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Tapa%20Lluernes%201024.jpg" alt="El Retorn de les Lluernes" class="album-image">
-      <h3>El Retorn de les Lluernes - OST (2022)</h3>
+      <p class="album-subtitle">El Retorn de les Lluernes – OST (2022)</p>
     </a>
   </div>
 
   <div class="album">
     <a href="https://open.spotify.com/album/3b7MIJfswL3egCT5zbjk6W?si=rz-Pcs3MS_Clbcs6lFQd0A" target="_blank">
       <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Solarium%20tapa%201024.jpg" alt="Solarium" class="album-image">
-      <h3>Solarium (2020)</h3>
+      <p class="album-subtitle">Solarium (2020)</p>
     </a>
   </div>
 
   <div class="album">
     <a href="https://open.spotify.com/album/2mjB71s63rOtIVQ9IwN5bp?si=fKSDikWHQpyZXTWLOk5w8A" target="_blank">
       <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Amaterur%201024.jpg" alt="Amateur" class="album-image">
-      <h3>Amateur (2019)</h3>
+      <p class="album-subtitle">Amateur (2019)</p>
     </a>
   </div>
 
   <div class="album">
     <a href="URL-de-Estantes" target="_blank">
       <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Estantes%20Portada%20FINAL.jpg" alt="Estantes" class="album-image">
-      <h3>Estantes (2004-2013)</h3>
+      <p class="album-subtitle">Estantes (2004–2013)</p>
     </a>
   </div>
 
   <div class="album">
     <a href="https://open.spotify.com/album/4Q7qD8UZDk9y5LB9tnEJpp?si=a9AHhdAbTX-0QHucDHzjxw" target="_blank">
       <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Portbou%201024.jpg" alt="Portbou" class="album-image">
-      <h3>Portbou (2007)</h3>
+      <p class="album-subtitle">Portbou (2007)</p>
     </a>
   </div>
-</div> <!-- ✅ cierre correcto del bloque .albums -->
+</div>
 
-<!-- ICONOS SOCIALES DEBAJO -->
 <div class="social-icons">
   <a href="https://www.youtube.com/channel/UC4Jm2tz8OS-VslZFx5St8fQ" target="_blank">
     <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/youtube%20iconB.jpg" alt="YouTube">
