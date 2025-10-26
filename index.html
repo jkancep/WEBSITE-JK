@@ -1,169 +1,180 @@
 <!DOCTYPE html>
 <html lang="es">
-<head><!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PP8Z36L73M "></script>
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PP8Z36L73M"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-PP8Z36L73M');
 </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julián Kancepolski</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com ">
-    <link rel="preconnect" href="https://fonts.gstatic.com " crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap " rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Cairo', sans-serif; 
-            line-height: 1.6;
-        }
-        header {
-            text-align: center;
-            height: 25vh; 
-            overflow: hidden;
-            position: relative;
-            margin-bottom: 42px; 
-        }
-        .image-container {
-            background-color: black; 
-            width: 100%; 
-            height: 100%; 
-            position: relative; 
-            overflow: hidden;
-        }
-        header img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            object-position: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(0.6); 
-        }
-        @media screen and (max-width: 768px) {
-            header {
-                height: 20vh;
-            }
-        }
-        @media screen and (max-width: 480px) {
-            header {
-                height: 25vh; 
-            }
-            header img {
-                transform: translate(-50%, -50%) scale(0.9);
-            }
-        }
-        .bio {
-            padding: 20px;
-            text-align: center;
-            margin: 0 30%;
-            margin-top: 40px; 
-            background-color: #ffffff;
-        }
-        @media screen and (max-width: 768px) {
-            .bio {
-                margin: 0 10%; 
-            }
-        }
-        @media screen and (max-width: 480px) {
-            .bio {
-                margin: 0 5%; 
-            }
-        }
-        h2 {
-            text-align: center;
-            margin-top: 20px;
-            font-family: 'Cairo', sans-serif; 
-            font-weight: 600;
-            color: black;
-            font-size: 20px;
-        }
-        .bio p:first-of-type {
-            color: #333;
-            margin: 0;
-            font-size: 9px;
-        }
-        .bio p:last-of-type {
-            color: #777;
-            font-style: italic;
-            margin: 13px 0 0;
-            font-size: 14px;
-        }
- 
-        .albums {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin: 20px 0; 
-        }
-        .album {
-            text-align: center; 
-            flex: 1 0 200px; 
-            max-width: 150px; 
-            transition: transform 0.2s;
-        }
-        .album:hover {
-            transform: scale(1.05);
-        }
-        .album-image {
-            width: 100%; 
-            height: auto; 
-        }
-        .album a {
-            text-decoration: none;
-            color: inherit;
-        }
-        h3 {
-            font-size: 14px; 
-            color: #333;
-            font-family: 'Cairo', sans-serif;
-            font-weight: normal;
-        }
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 30px; 
-        }
-        .social-icon {
-            width: 30px;
-            height: 30px;
-        }
-        /* --- nuevas 6 líneas para la quinta portada --- */
-        @media (max-width: 600px) {
-  .album.new      { flex: 0 0 100%; }   /* ocupa toda la línea */
-  .album:not(.new) { flex: 0 0 45%;  }  /* las demás, de dos en dos */
-}
-    </style>
-</head>
-<body>
-    <header>
-        <div class="image-container">
-            <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/profile%20header%20cello%20web%202023.jpg " alt="Imagen de Julián Kancepolski">
-        </div>
-    </header>
- 
-    <div class="bio">
-    Julián Kancepolski es un compositor nacido en Buenos Aires, en 2001 se radicó en España. 
-    Ha editado cinco discos:  <em>Portbou</em>, <em>Estantes</em>,
-    <em>Amateur</em>, <em>Solarium</em> y <em>El Retorn de les Lluernes</em>. 
-    Además, crea e interpreta música para cine, televisión, danza, teatro y medios digitales.
 
-    <p>Julián Kancepolski is a composer born in Buenos Aires who settled in Spain in 2001. 
-    He has released five albums:  <em>Portbou</em>, <em>Estantes</em>,
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Julián Kancepolski</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Cairo', sans-serif; 
+    line-height: 1.6;
+}
+header {
+    text-align: center;
+    height: 25vh; 
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 42px; 
+}
+.image-container {
+    background-color: black; 
+    width: 100%; 
+    height: 100%; 
+    position: relative; 
+    overflow: hidden;
+}
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.6); 
+}
+@media screen and (max-width: 768px) {
+    header {
+        height: 20vh;
+    }
+}
+@media screen and (max-width: 480px) {
+    header {
+        height: 25vh; 
+    }
+    header img {
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+}
+.bio {
+    padding: 20px;
+    text-align: center;
+    margin: 0 30%;
+    margin-top: 40px; 
+    background-color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+    .bio {
+        margin: 0 10%; 
+    }
+}
+@media screen and (max-width: 480px) {
+    .bio {
+        margin: 0 5%; 
+    }
+}
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Cairo', sans-serif; 
+    font-weight: 600;
+    color: black;
+    font-size: 20px;
+}
+.bio p:first-of-type {
+    color: #333;
+    margin: 0;
+    font-size: 9px;
+}
+.bio p:last-of-type {
+    color: #777;
+    font-style: italic;
+    margin: 13px 0 0;
+    font-size: 14px;
+}
+
+.albums {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0; 
+}
+.album {
+    text-align: center; 
+    flex: 1 0 200px; 
+    max-width: 150px; 
+    transition: transform 0.2s;
+}
+.album:hover {
+    transform: scale(1.05);
+}
+.album-image {
+    width: 100%; 
+    height: auto; 
+}
+.album a {
+    text-decoration: none;
+    color: inherit;
+}
+h3 {
+    font-size: 14px; 
+    color: #333;
+    font-family: 'Cairo', sans-serif;
+    font-weight: normal;
+}
+
+/* ICONOS SOCIALES (debajo de álbumes) */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px; /* espacio respecto a los álbumes */
+    margin-bottom: 40px;
+}
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s;
+}
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Adaptación móvil */
+@media (max-width: 600px) {
+  .album.new      { flex: 0 0 100%; }
+  .album:not(.new) { flex: 0 0 45%; }
+}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="image-container">
+      <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/profile%20header%20cello%20web%202023.jpg" alt="Imagen de Julián Kancepolski">
+  </div>
+</header>
+
+<div class="bio">
+  Julián Kancepolski es un compositor nacido en Buenos Aires, en 2001 se radicó en España. 
+  Ha editado cinco discos: <em>Portbou</em>, <em>Estantes</em>,
+  <em>Amateur</em>, <em>Solarium</em> y <em>El Retorn de les Lluernes</em>. 
+  Además, crea e interpreta música para cine, televisión, danza, teatro y medios digitales.
+  <p>
+    Julián Kancepolski is a composer born in Buenos Aires who settled in Spain in 2001. 
+    He has released five albums: <em>Portbou</em>, <em>Estantes</em>,
     <em>Amateur</em>, <em>Solarium</em> and <em>El Retorn de les Lluernes</em>. 
-    He also creates, arranges, and performs music for film, television, theatre, dance, and other media.</p>
+    He also creates, arranges, and performs music for film, television, theatre, dance, and other media.
+  </p>
 </div>
- 
-   <h2>Albums</h2>
+
+<h2>Albums</h2>
 <div class="albums">
-  <!-- Época reciente -->
   <div class="album">
     <a href="https://open.spotify.com/album/7lXSEb4zyiI2SU87QFG5Qs?si=jMEqc1wAR0SnHv_SEne4CA" target="_blank">
       <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Tapa%20Lluernes%201024.jpg" alt="El Retorn de les Lluernes" class="album-image">
@@ -185,7 +196,6 @@
     </a>
   </div>
 
-  <!-- Época temprana -->
   <div class="album">
     <a href="URL-de-Estantes" target="_blank">
       <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Estantes%20Portada%20FINAL.jpg" alt="Estantes" class="album-image">
@@ -198,22 +208,21 @@
       <img src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/Portbou%201024.jpg" alt="Portbou" class="album-image">
       <h3>Portbou (2007)</h3>
     </a>
-      </div><!-- cierra .albums -->
-  <!-- ICONOS SOCIAL -->
-  <div class="social-icons">
-    <a href="https://www.youtube.com/channel/UC4Jm2tz8OS-VslZFx5St8fQ " target="_blank">
-      <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/youtube%20iconB.jpg " alt="YouTube">
-    </a>
-
-    <a href="https://open.spotify.com/artist/6DDqxjhbPR5KUwZ6TomVYE?si=NwiFrD1OR5-GaSDHGYeCVw " target="_blank">
-      <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/spotify%20iconB.jpg " alt="Spotify">
-    </a>
-
-    <a href="https://music.apple.com/us/artist/julian-kancepolski/1016764437 " target="_blank">
-      <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/apple%20iconB.jpg " alt="Apple Music">
-    </a>
   </div>
-</body>
-</html>
+</div> <!-- ✅ cierre correcto del bloque .albums -->
+
+<!-- ICONOS SOCIALES DEBAJO -->
+<div class="social-icons">
+  <a href="https://www.youtube.com/channel/UC4Jm2tz8OS-VslZFx5St8fQ" target="_blank">
+    <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/youtube%20iconB.jpg" alt="YouTube">
+  </a>
+  <a href="https://open.spotify.com/artist/6DDqxjhbPR5KUwZ6TomVYE?si=NwiFrD1OR5-GaSDHGYeCVw" target="_blank">
+    <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/spotify%20iconB.jpg" alt="Spotify">
+  </a>
+  <a href="https://music.apple.com/us/artist/julian-kancepolski/1016764437" target="_blank">
+    <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/apple%20iconB.jpg" alt="Apple Music">
+  </a>
+</div>
+
 </body>
 </html>
