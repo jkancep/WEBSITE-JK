@@ -137,9 +137,9 @@
         }
         /* --- nuevas 6 líneas para la quinta portada --- */
         @media (max-width: 600px) {
-          .album.new { flex: 0 0 100%; }
-          .album:not(.new) { flex: 0 0 45%; }
-        }
+  .album.new      { flex: 0 0 100%; }   /* ocupa toda la línea */
+  .album:not(.new) { flex: 0 0 45%;  }  /* las demás, de dos en dos */
+}
     </style>
 </head>
 <body>
