@@ -48,11 +48,17 @@ header img {
     transform: translate(-50%, -50%) scale(0.6); 
 }
 @media screen and (max-width: 768px) {
-    header { height: 20vh; }
+    header {
+        height: 20vh;
+    }
 }
 @media screen and (max-width: 480px) {
-    header { height: 25vh; }
-    header img { transform: translate(-50%, -50%) scale(0.9); }
+    header {
+        height: 25vh; 
+    }
+    header img {
+        transform: translate(-50%, -50%) scale(0.9);
+    }
 }
 .bio {
     padding: 20px;
@@ -62,10 +68,14 @@ header img {
     background-color: #ffffff;
 }
 @media screen and (max-width: 768px) {
-    .bio { margin: 0 10%; }
+    .bio {
+        margin: 0 10%; 
+    }
 }
 @media screen and (max-width: 480px) {
-    .bio { margin: 0 5%; }
+    .bio {
+        margin: 0 5%; 
+    }
 }
 h2 {
     text-align: center;
@@ -81,7 +91,6 @@ h2 {
     font-size: 14px;
     font-weight: 400;
 }
-
 .bio p:last-of-type {
     color: #777;
     font-style: italic;
@@ -90,14 +99,12 @@ h2 {
     font-weight: 400;
 }
 
-}
-
 .albums {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
-    margin: 20px 0; 
+    gap: 30px;
+    margin: 40px 0; 
 }
 .album {
     text-align: center; 
@@ -105,13 +112,19 @@ h2 {
     max-width: 150px; 
     transition: transform 0.2s;
 }
-.album:hover { transform: scale(1.05); }
-.album-image { width: 100%; height: auto; }
-.album a { text-decoration: none; color: inherit; }
-
-/* Texto gris debajo de las portadas */
+.album:hover {
+    transform: scale(1.05);
+}
+.album-image {
+    width: 100%; 
+    height: auto; 
+}
+.album a {
+    text-decoration: none;
+    color: inherit;
+}
 .album-subtitle {
-    font-size: 13px;
+    font-size: 14px;
     color: #aaa;
     margin-top: 8px;
 }
@@ -121,7 +134,7 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-top: 40px;
+    margin-top: 40px; 
     margin-bottom: 40px;
 }
 .social-icon {
@@ -129,8 +142,11 @@ h2 {
     height: 30px;
     transition: transform 0.2s;
 }
-.social-icon:hover { transform: scale(1.1); }
+.social-icon:hover {
+    transform: scale(1.1);
+}
 
+/* Adaptación móvil */
 @media (max-width: 600px) {
   .album.new      { flex: 0 0 100%; }
   .album:not(.new) { flex: 0 0 45%; }
@@ -146,10 +162,12 @@ h2 {
 </header>
 
 <div class="bio">
-  Julián Kancepolski es un compositor nacido en Buenos Aires, en 2001 se radicó en España. 
-  Ha editado cinco discos: <em>Portbou</em>, <em>Estantes</em>,
-  <em>Amateur</em>, <em>Solarium</em> y <em>El Retorn de les Lluernes</em>. 
-  Además, crea e interpreta música para cine, televisión, danza, teatro y medios digitales.
+  <p>
+    Julián Kancepolski es un compositor nacido en Buenos Aires, en 2001 se radicó en España. 
+    Ha editado cinco discos: <em>Portbou</em>, <em>Estantes</em>,
+    <em>Amateur</em>, <em>Solarium</em> y <em>El Retorn de les Lluernes</em>. 
+    Además, crea e interpreta música para cine, televisión, danza, teatro y medios digitales.
+  </p>
   <p>
     Julián Kancepolski is a composer born in Buenos Aires who settled in Spain in 2001. 
     He has released five albums: <em>Portbou</em>, <em>Estantes</em>,
@@ -196,6 +214,7 @@ h2 {
   </div>
 </div>
 
+<!-- ICONOS SOCIALES -->
 <div class="social-icons">
   <a href="https://www.youtube.com/channel/UC4Jm2tz8OS-VslZFx5St8fQ" target="_blank">
     <img class="social-icon" src="https://raw.githubusercontent.com/jkancep/WEBSITE-JK/main/youtube%20iconB.jpg" alt="YouTube">
