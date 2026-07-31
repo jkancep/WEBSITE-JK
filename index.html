@@ -21,21 +21,23 @@
 <style>
 body {
     margin: 0;
-    font-family: 'Cairo', sans-serif; 
+    font-family: 'Cairo', sans-serif;
     line-height: 1.6;
 }
+
+/* Header */
 header {
     text-align: center;
-    height: 25vh; 
+    height: 25vh;
     overflow: hidden;
     position: relative;
-    margin-bottom: 42px; 
+    margin-bottom: 42px;
 }
 .image-container {
-    background-color: black; 
-    width: 100%; 
-    height: 100%; 
-    position: relative; 
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: relative;
     overflow: hidden;
 }
 header img {
@@ -46,83 +48,46 @@ header img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.6); 
+    transform: translate(-50%, -50%) scale(0.6);
 }
-@media screen and (max-width: 768px) {
-    header {
-        height: 20vh;
-    }
-}
-@media screen and (max-width: 480px) {
-    header {
-        height: 25vh; 
-    }
-    header img {
-        transform: translate(-50%, -50%) scale(0.9);
-    }
-}
+
+/* Bio */
 .bio {
     padding: 20px;
     text-align: center;
     margin: 0 30%;
-    margin-top: 40px; 
-    background-color: #ffffff;
+    margin-top: 40px;
 }
 @media screen and (max-width: 768px) {
-    .bio {
-        margin: 0 10%; 
-    }
+    .bio { margin: 0 10%; }
 }
 @media screen and (max-width: 480px) {
-    .bio {
-        margin: 0 5%; 
-    }
-}
-h2 {
-    text-align: center;
-    margin-top: 20px;
-    font-family: 'Cairo', sans-serif; 
-    font-weight: 600;
-    color: black;
-    font-size: 20px;
-}
-.bio p:first-of-type {
-    color: #000;
-    margin: 0;
-    font-size: 14px;
-    font-weight: 400;
-}
-.bio p:last-of-type {
-    color: #666;
-    font-style: italic;
-    margin: 13px 0 0;
-    font-size: 14px;
-    font-weight: 400;
+    .bio { margin: 0 5%; }
 }
 
+/* Albums */
 .albums {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
-    margin: 40px 0; 
+    gap: 40px;
+    margin: 40px 0;
+    padding: 0 15px;
 }
 .album {
-    text-align: center; 
-    flex: 1 0 200px; 
-    max-width: 150px; 
-    transition: transform 0.2s;
+    text-align: center;
+    flex: 1 0 180px;
+    max-width: 180px;
+    transition: transform 0.3s ease;
 }
 .album:hover {
     transform: scale(1.05);
 }
 .album-image {
-    width: 100%; 
-    height: auto; 
-}
-.album a {
-    text-decoration: none;
-    color: inherit;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
 .album-subtitle {
     font-size: 14px;
@@ -130,27 +95,30 @@ h2 {
     margin-top: 8px;
 }
 
-/* ICONOS SOCIALES (debajo de álbumes) */
+/* === MÓVIL === */
+@media (max-width: 600px) {
+    .albums { gap: 45px; }
+    .album {
+        flex: 1 0 100%;
+        max-width: 300px;
+    }
+    header { height: 22vh; }
+}
+
+/* Social icons */
 .social-icons {
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-top: 40px; 
-    margin-bottom: 40px;
+    margin: 50px 0 40px;
 }
 .social-icon {
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
     transition: transform 0.2s;
 }
 .social-icon:hover {
-    transform: scale(1.1);
-}
-
-/* Adaptación móvil */
-@media (max-width: 600px) {
-  .album.new      { flex: 0 0 100%; }
-  .album:not(.new) { flex: 0 0 45%; }
+    transform: scale(1.15);
 }
 </style>
 
